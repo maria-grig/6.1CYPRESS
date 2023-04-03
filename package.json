@@ -4,7 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "edge:headed:notebooks": "cypress run --headed --browser edge",
+    "edge:headed:mobile": "cypress run --config-file mobile.config.js --headed --browser edge",
+    "edge:headless:notebooks": "cypress run --browser edge",
+    "edge:headless:mobile": "cypress run --config-file mobile.config.js --browser edge",
+    "chrome:headed:notebooks": "cypress run --headed --browser chrome",
+    "chrome:headed:mobile": "cypress run --config-file mobile.config.js --headed --browser chrome",  
+    "chrome:headless:notebooks": "cypress run --browser chrome",
+    "chrome:headless:mobile": "cypress run --config-file mobile.config.js --browser chrome"
   },
   "repository": {
     "type": "git",
