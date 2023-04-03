@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "edge:headed:notebooks": "cypress run --headed --browser edge",
     "edge:headed:mobile": "cypress run --config-file mobile.config.js --headed --browser edge",
     "edge:headless:notebooks": "cypress run --browser edge",

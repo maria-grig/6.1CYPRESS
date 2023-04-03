@@ -1,4 +1,3 @@
-
 it("Should open the main page", () => {
   cy.visit("/");
   cy.contains("Books list");
@@ -16,7 +15,7 @@ it("Should successfully login", () => {
   cy.contains("Добро пожаловать test@test.com").should("be.visible");
 });
 
-it("Should not login with empty login", () => {
+it("Should not login with empty login input", () => {
   cy.visit("/");
 
   cy.login("", "test");
@@ -30,7 +29,7 @@ it("Should not login with empty login", () => {
     .should("be.false");
 });
 
-it("Should not login with empty password", () => {
+it("Should not login with empty password input", () => {
   cy.visit("/");
 
   cy.login("test@test.com");
