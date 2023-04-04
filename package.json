@@ -11,7 +11,9 @@
     "chrome:headed:notebooks": "cypress run --headed --browser chrome",
     "chrome:headed:mobile": "cypress run --config-file mobile.config.js --headed --browser chrome",  
     "chrome:headless:notebooks": "cypress run --browser chrome",
-    "chrome:headless:mobile": "cypress run --config-file mobile.config.js --browser chrome"
+    "chrome:headless:mobile": "cypress run --config-file mobile.config.js --browser chrome",
+    "cy:run": "cypress run"
+    
   },
   "repository": {
     "type": "git",
